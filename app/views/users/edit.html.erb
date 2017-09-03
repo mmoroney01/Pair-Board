@@ -17,7 +17,8 @@
   	<%= f.text_field :last_name, placeholder: "#{@user.last_name}" %><br>
   	<%= f.text_field :email, placeholder: "#{@user.email}" %><br>
   	<%= f.text_field :phone, placeholder: "#{@user.phone}" %><br>
-    <%= f.text_field :picture_url, placeholder: "#{@user.picture_url}" %><br>
+<!--     user.avatar is the field for the migration -->
+    <%= f.file_field :avatar, placeholder: "#{@user.avatar}" %><br>
     <%= f.text_field :bio, placeholder: "#{@user.bio}" %><br>
     <%= f.text_field :topic1, placeholder: "preferred topic 1" %><br>
     <%= f.text_field :topic2, placeholder: "preferred topic 2" %><br>

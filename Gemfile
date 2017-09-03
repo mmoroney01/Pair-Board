@@ -7,6 +7,8 @@ end
 
 gem 'dotenv'
 gem 'dotenv-rails', groups: [:development, :test]
+
+gem "paperclip", "~> 5.0.0"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.3'
 # Use postgresql as the database for Active Record
