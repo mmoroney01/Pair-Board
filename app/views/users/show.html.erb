@@ -1,7 +1,11 @@
 <% if session[:user_id] == @user.id %>
   <%= link_to "Edit Profile", edit_user_path(@user) %>
 <% end %>
-<p class="pic"><%= image_tag user_profile_pic(@user) %></p>
+
+
+<!-- must have the avatar url on the show page -->
+<p class="pic"><%= image_tag @user.avatar.url %></p>
+
 <p class="name"><%= @user.first_name %> <%= @user.last_name %></p>
 <p class="bio"><%= @user.bio %></p>
 
